@@ -7,10 +7,11 @@ import "./ExpenseItem.css";
 const ExpenseItem = (props) => {
 
   const [title, setTitle]= useState(props.title); //REACT HOOK//
+  //console.log([title, setTitle]);
   const clickHandler = () => {
     //title = "Updated";
     setTitle("Updated");
-    console.log("title");
+   // console.log("title");
   };
   return (
     <Card className="expense-item">
